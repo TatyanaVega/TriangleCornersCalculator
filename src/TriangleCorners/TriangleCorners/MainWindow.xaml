@@ -1,0 +1,68 @@
+﻿<Window x:Class="TriangleCorners.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TriangleCorners"
+        mc:Ignorable="d"
+        Title="Определение типа треугольника"
+        Height="300"
+        Width="400"
+        ResizeMode="NoResize">
+    <Window.DataContext>
+        <local:MainWindowViewModel />
+    </Window.DataContext>
+    <Grid Margin="40">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Сторона а" />
+        <TextBox Grid.Row="0"
+                 Grid.Column="2"
+                 Text="{Binding ALength}"
+                 PreviewTextInput="UIElement_OnPreviewTextInput"
+                 VerticalAlignment="Center" />
+        <TextBlock Grid.Row=" 2"
+                   Grid.Column="0"
+                   Text="Сторона b" />
+        <TextBox Grid.Row="2"
+                 Grid.Column="2"
+                 Text="{Binding BLength}"
+                 PreviewTextInput="UIElement_OnPreviewTextInput"
+                 VerticalAlignment="Center" />
+        <TextBlock Grid.Row="4"
+                   Grid.Column="0"
+                   Text="Сторона c" />
+        <TextBox Grid.Row="4"
+                 Grid.Column="2"
+                 Text="{Binding CLength}"
+                 PreviewTextInput="UIElement_OnPreviewTextInput"
+                 VerticalAlignment="Center" />
+        <Button Grid.Row="6"
+                Grid.ColumnSpan="3"
+                Grid.Column="0"
+                Content="Рассчитать"
+                Width="100"
+                HorizontalAlignment="Center"
+                Command="{Binding Path=CalculateCommand}" />
+        <TextBlock Grid.Row="8"
+                   Grid.Column="0"
+                   Text="Результат:" />
+        <TextBlock Grid.Row="8"
+                   Grid.Column="2"
+                   Text="{Binding TriangleTypeResult}" />
+    </Grid>
+</Window>

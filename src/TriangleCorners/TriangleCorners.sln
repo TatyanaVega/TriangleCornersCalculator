@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleCorners", "TriangleCorners\TriangleCorners.csproj", "{6EAEC4F2-6150-45AB-80FC-92015EB62AD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleCornersCalculator", "TriangleCornersCalculator\TriangleCornersCalculator.csproj", "{1D61A538-AA92-4C67-BA50-13824DA54538}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EAEC4F2-6150-45AB-80FC-92015EB62AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EAEC4F2-6150-45AB-80FC-92015EB62AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EAEC4F2-6150-45AB-80FC-92015EB62AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EAEC4F2-6150-45AB-80FC-92015EB62AD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D61A538-AA92-4C67-BA50-13824DA54538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D61A538-AA92-4C67-BA50-13824DA54538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D61A538-AA92-4C67-BA50-13824DA54538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D61A538-AA92-4C67-BA50-13824DA54538}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB34FE24-132C-4E38-A388-12DFCDDFBA05}
+	EndGlobalSection
+EndGlobal
